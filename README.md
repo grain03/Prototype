@@ -19,5 +19,8 @@ Création un application de management des projets et des tâches et également 
 ## Livrable
 
 - Backlog
+- Analyse
+- conception
 - App
-- docs
+- Rapport
+- Presentation
