@@ -1,6 +1,6 @@
 ---
 layout: default
-slug: title
+title: title
 slug: /backlog
 order: 2
 ---
@@ -13,6 +13,9 @@ order: 2
   - Introduction
     - introduction.md
     - Images
+  - analyse
+    - images
+    - analyse.md
   - Conclusion
     - conclusion.md
   - Backlog
