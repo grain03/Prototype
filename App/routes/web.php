@@ -26,3 +26,7 @@ Route::resource('tasks', TasksController::class);
 
 Route::resource('projects', ProjectsController::class);
 Route::get('projects/tasks/{projectId}', [TasksController::class, 'index'])->name('projects.tasks');
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Auth::routes();

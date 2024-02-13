@@ -70,7 +70,19 @@ php artisan migrate
 php artisan db:seed
 ```
 
-9. To view your project's progress locally, run this command:
+9. Install Admin LTE
+
+```bash
+npm install admin-lte@^3.2 --save
+```
+
+10. Install Admin LTE Auth ui
+
+```bash
+php artisan ui adminlte --auth
+```
+
+11. To view your project's progress locally, run this command:
 
 ```bash
 php artisan serve
