@@ -5,6 +5,7 @@ namespace Database\Seeders;
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Hash;
 
 class DatabaseSeeder extends Seeder
 {
@@ -28,7 +29,7 @@ class DatabaseSeeder extends Seeder
                 'description' => 'Création d\'une application web pour laa gestion des patients de centre cnmh.',
             ]
         ]);
-        
+
         DB::table("tasks")->insert([
             [
                 'nom' => 'Portfolio',
@@ -44,6 +45,15 @@ class DatabaseSeeder extends Seeder
                 'nom' => '  CNMH',
                 'description' => 'Création d\'une application web pour laa gestion des patients de centre cnmh.',
                 'projetId' => 3,
+            ]
+        ]);
+
+        DB::table("users")->insert([
+            [
+                'first_name' => 'Reda',
+                'last_name' => 'Grain',
+                'email' => 'a@gmail.com',
+                'password' => Hash::make('reda'),
             ]
         ]);
     }
